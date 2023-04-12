@@ -12,10 +12,13 @@ import { AuthContext } from './context/AuthContext'
 
 //COMPONENTS
 import { Navbar, ScrollToTop, Sidebar } from './components'
+import { ThemeContext } from './context/ThemeContext'
+import AdminUsers from './pages/user/AdminUsers'
 
 const App = () => {
 
     const { currentUser } = useContext(AuthContext);
+    const { darkMode } = useContext(ThemeContext)
 
     const ProtectedRoute = ({ children }) => {
         if (!currentUser) {
@@ -29,8 +32,9 @@ const App = () => {
         <>
             <ScrollToTop />
             <Routes>
-                <Route path='/' element={<ProtectedRoute><Layout /></ProtectedRoute>} >
+                <Route path='/' element={<ProtectedRoute><Layout darkMode={darkMode} /></ProtectedRoute>} >
                     <Route path='/' index element={<Admin />} />
+                    <Route path='/users' index element={<AdminUsers />} />
                 </Route>
 
                 <Route path='/login' index element={<Login />} />
@@ -40,13 +44,14 @@ const App = () => {
     )
 }
 
-const Layout = () => {
+const Layout = ({darkMode}) => {
+    console.log(darkMode);
     return (
-        <>
+        <div className={`${darkMode ? "bg-dark" : "bg-main"}`}>
             <Navbar />
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
-                    <nav id='sidebarMenu' className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                    <nav id='sidebarMenu' className="col-md-3 col-lg-2 d-md-block sidebar collapse">
                         <Sidebar />
                     </nav>
 
@@ -55,7 +60,7 @@ const Layout = () => {
                     </main>
                 </div>
             </div >
-        </>
+        </div >
     );
 };
 
