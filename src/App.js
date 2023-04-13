@@ -46,17 +46,17 @@ const App = () => {
     )
 }
 
-const Layout = ({darkMode}) => {
+const Layout = ({ darkMode }) => {
     return (
         <div className={`${darkMode ? "bg-dark" : "bg-main"}`}>
             <Navbar />
             <div className="container">
                 <div className="row">
-                    <nav id='sidebarMenu' className="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                    <nav id='sidebarMenu' className="col-xl-2 col-lg-2 col-md-2 d-md-block position-fixed collapse" style={{ zIndex: "100", backgroundColor: "#edf2f9" }}>
                         <Sidebar />
                     </nav>
 
-                    <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <main className="col-xl-9 col-lg-9 col-md-9 ms-sm-auto px-md-4">
                         <Outlet />
                     </main>
                 </div>

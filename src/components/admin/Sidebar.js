@@ -10,8 +10,7 @@ const Sidebar = () => {
     return (
         <div>
             {/* NAVBAR BOLUMINDE BUTTON GIDIPDIR */}
-
-            <div className="position-fixed pt-3 sidebar-sticky">
+            <div className="position-sticky pt-3" style={{ height: "calc(100vh - 48px)" }}>
                 <ul className="nav flex-column">
                     <li className="nav-item">
                         <NavLink to="/" className={`nav-link d-flex align-items-center ${darkMode ? "text-white" : "text-dark"}`}>
