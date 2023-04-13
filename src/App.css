@@ -9,3 +9,11 @@
     display: inline-block;
     margin-right: 0.5rem;
 }
+
+.bg-dark-blue {
+    background-color: #292e34!important;
+}
+
+.bg-dark-blue-footer {
+    background-color: #323840!important;
+}

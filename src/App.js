@@ -14,6 +14,7 @@ import { AuthContext } from './context/AuthContext'
 import { Navbar, ScrollToTop, Sidebar } from './components'
 import { ThemeContext } from './context/ThemeContext'
 import AdminUsers from './pages/user/AdminUsers'
+import AdminUserCreate from './pages/user/AdminUserCreate'
 
 const App = () => {
 
@@ -34,7 +35,8 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<ProtectedRoute><Layout darkMode={darkMode} /></ProtectedRoute>} >
                     <Route path='/' index element={<Admin />} />
-                    <Route path='/users' index element={<AdminUsers />} />
+                    <Route path='/users' element={<AdminUsers />} />
+                    <Route path='/user/create' element={<AdminUserCreate />} />
                 </Route>
 
                 <Route path='/login' index element={<Login />} />
@@ -45,7 +47,6 @@ const App = () => {
 }
 
 const Layout = ({darkMode}) => {
-    console.log(darkMode);
     return (
         <div className={`${darkMode ? "bg-dark" : "bg-main"}`}>
             <Navbar />

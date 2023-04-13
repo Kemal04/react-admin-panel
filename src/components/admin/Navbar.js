@@ -26,7 +26,7 @@ const Navbar = () => {
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         </form>
                         <ul className="navbar-nav ms-auto">
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <div onClick={darkModeClick} className="nav-link border-0 bg-dark text-white" style={{ cursor: "pointer" }}>
                                     {
                                         darkMode ?
@@ -39,32 +39,32 @@ const Navbar = () => {
                             <li className="nav-item mx-2">
                                 <NavLink to="/" className="nav-link position-relative">
                                     <FontAwesomeIcon icon={faShoppingCart} />
-                                    <span class="position-absolute translate-middle badge rounded-pill bg-danger p-1 px-2" style={{ top: "20%", left: "90%", fontSize: "10px" }}>
+                                    <span className="position-absolute translate-middle badge rounded-pill bg-danger p-1 px-2" style={{ top: "20%", left: "90%", fontSize: "10px" }}>
                                         9
-                                        <span class="visually-hidden">unread messages</span>
+                                        <span className="visually-hidden">unread messages</span>
                                     </span>
                                 </NavLink>
                             </li>
                             <li className="nav-item mx-2">
                                 <NavLink to="/" className="nav-link position-relative">
                                     <FontAwesomeIcon icon={faBell} />
-                                    <span class="position-absolute translate-middle p-1 bg-primary border border-primary rounded-circle" style={{ top: "30%" }}>
-                                        <span class="visually-hidden">New alerts</span>
+                                    <span className="position-absolute translate-middle p-1 bg-primary border border-primary rounded-circle" style={{ top: "30%" }}>
+                                        <span className="visually-hidden">New alerts</span>
                                     </span>
                                 </NavLink>
                             </li>
                             <li className="nav-item mx-2 dropdown">
-                                <NavLink to="/" className="nav-link position-relative">
-                                    <div class="nav-link dropdown-toggle p-0 text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div className="nav-link position-relative">
+                                    <div className="nav-link dropdown-toggle p-0 text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <FontAwesomeIcon icon={faUser} />
                                     </div>
-                                    <ul class="dropdown-menu shadow border-0">
-                                        <li><Link to="/" class="dropdown-item">Action</Link></li>
-                                        <li><Link to="/" class="dropdown-item">Another action</Link></li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li><Link to="/" class="dropdown-item">Something else here</Link></li>
+                                    <ul className="dropdown-menu shadow border-0">
+                                        <li><Link to="/" className="dropdown-item">Action</Link></li>
+                                        <li><Link to="/" className="dropdown-item">Another action</Link></li>
+                                        <li><hr className="dropdown-divider" /></li>
+                                        <li><Link to="/" className="dropdown-item">Something else here</Link></li>
                                     </ul>
-                                </NavLink>
+                                </div>
                             </li>
                         </ul>
                     </div>
