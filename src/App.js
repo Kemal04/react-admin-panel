@@ -52,7 +52,7 @@ const Layout = ({ darkMode }) => {
             <Navbar />
             <div className="container">
                 <div className="row">
-                    <nav id='sidebarMenu' className="col-xl-2 col-lg-2 col-md-2 d-md-block position-fixed collapse" style={{ zIndex: "100", backgroundColor: "#edf2f9" }}>
+                    <nav id='sidebarMenu' className="col-xl-2 col-lg-2 col-md-2 d-md-block position-fixed collapse" style={darkMode ? { backgroundColor: "#212529", zIndex: "100" } : { backgroundColor: "#edf2f9", zIndex: "100" }}>
                         <Sidebar />
                     </nav>
 

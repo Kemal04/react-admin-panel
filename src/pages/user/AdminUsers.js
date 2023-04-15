@@ -87,6 +87,26 @@ const AdminUsers = () => {
                             <div className={`${darkMode ? "text-white fw-bold" : "text-primary"}`}>Kemal Hojayew</div>
                             <div className='small'>kemalhojayew04@gmail.com</div>
                         </div>
+                        <div className='col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-4 border-bottom pb-3'>
+                            <img src={user_icon} alt="" className='img-fluid rounded-circle mb-2' style={{ width: "100px" }} />
+                            <div className={`${darkMode ? "text-white fw-bold" : "text-primary"}`}>Kemal Hojayew</div>
+                            <div className='small'>kemalhojayew04@gmail.com</div>
+                        </div>
+                        <div className='col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-4 border-bottom pb-3'>
+                            <img src={user_icon} alt="" className='img-fluid rounded-circle mb-2' style={{ width: "100px" }} />
+                            <div className={`${darkMode ? "text-white fw-bold" : "text-primary"}`}>Kemal Hojayew</div>
+                            <div className='small'>kemalhojayew04@gmail.com</div>
+                        </div>
+                        <div className='col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-4 border-bottom pb-3'>
+                            <img src={user_icon} alt="" className='img-fluid rounded-circle mb-2' style={{ width: "100px" }} />
+                            <div className={`${darkMode ? "text-white fw-bold" : "text-primary"}`}>Kemal Hojayew</div>
+                            <div className='small'>kemalhojayew04@gmail.com</div>
+                        </div>
+                        <div className='col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-4 border-bottom pb-3'>
+                            <img src={user_icon} alt="" className='img-fluid rounded-circle mb-2' style={{ width: "100px" }} />
+                            <div className={`${darkMode ? "text-white fw-bold" : "text-primary"}`}>Kemal Hojayew</div>
+                            <div className='small'>kemalhojayew04@gmail.com</div>
+                        </div>
                     </div>
                 </div>
             </div>
